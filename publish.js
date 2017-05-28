@@ -32,7 +32,8 @@ let height_with_margin = page_height + margin_top + margin_bottom;
 
 let docDefinition = {
   // a string 'A8' or { width: number, height: number }
-  pageSize: { width: width_with_margin, height: height_with_margin },
+//   pageSize: { width: width_with_margin, height: height_with_margin + 200 },
+	pageSize: { width: width_with_margin, height: height_with_margin},
 
   // by default we use portrait, you can change it to landscape if you wish
   // pageOrientation: 'landscape',
@@ -44,7 +45,12 @@ content: [
 			image: comic_img_name,
             width: page_width,
             height: page_height
-		}
+		},
+		// '\n\nCredits: \n\n',
+		// 'Comic from\n',
+		// { text:"http://mentirinhas.com.br/\n\n", link:"http://mentirinhas.com.br/", decoration:"underline" },
+		// 'Mobile optimized PDF by selvan\n',
+		// { text:"p.thamarai+happiness@ gmail.com\n", link:"mailto:p.thamarai+12lessons@gmail.com", decoration:"underline" },
 ]
 };
 
